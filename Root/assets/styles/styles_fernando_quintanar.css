@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(255, 230, 0);
+    
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+footer{
+    color: rgb(255, 255, 255);
+}
+
+article{
+    background-color: rgba(90, 78, 78, 0.452);
+}
+nav>ul>li{
+    color: rgb(255, 255, 255);
+}
+
