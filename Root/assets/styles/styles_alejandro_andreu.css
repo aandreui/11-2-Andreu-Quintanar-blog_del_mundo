@@ -20,6 +20,12 @@ article{
     background-color: rgb(112, 100, 100);
 }
 nav>ul>li{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
+table{
+    border: 1px dotted crimson;
+    width: 100%;
+    background: rgb(185, 29, 1);
+    border-radius: 10px ;
+}
