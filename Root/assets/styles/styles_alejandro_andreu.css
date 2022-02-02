@@ -19,6 +19,7 @@ footer{
 article{
     background-color: rgb(112, 100, 100);
 }
-nav{
+nav>ul>li{
     color: white;
 }
+
