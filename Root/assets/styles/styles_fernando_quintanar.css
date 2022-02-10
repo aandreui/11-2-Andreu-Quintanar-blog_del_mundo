@@ -20,6 +20,12 @@ article{
     background-color: rgba(82, 79, 79, 0.74);
 }
 nav{
-    color: rgb(255, 255, 255);
+    color: rgb(24, 16, 16);
 }
 
+table{
+    border: 1px darkgrey;
+    width: 100%;
+    background-color: darkgrey;
+    border-radius: 10px;    
+}
