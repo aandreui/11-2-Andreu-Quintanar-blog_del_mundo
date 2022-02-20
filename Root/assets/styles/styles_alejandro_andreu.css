@@ -32,3 +32,9 @@ table{
     background: rgb(185, 29, 1);
     border-radius: 10px ;
 }
+
+
+
+.imagen{
+    border: 1px solid white;
+}
