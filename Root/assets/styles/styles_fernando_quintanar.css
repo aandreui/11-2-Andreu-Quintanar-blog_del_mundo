@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(32, 40, 65);
+    background-color: rgb(17, 16, 16);
     
 }
 
@@ -9,23 +9,42 @@ h1{
 }
 
 h2{
-    color: rgb(255, 255, 255);
+    color: white;
     text-align: center;
 }
 footer{
-    color: rgb(255, 255, 255);
+    color: white;
 }
 
 article{
-    background-color: rgba(82, 79, 79, 0.74);
+    background-color: rgb(112, 100, 100);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; 
+    border-bottom: 1px solid;  color:#FFFFFF ; 
 }
-nav{
-    color: rgb(24, 16, 16);
+nav>ul>li{
+    color: rgb(170, 23, 23);
+    list-style: none;
+}
+
+nav>ul>li>a{
+    text-decoration: none;
 }
 
 table{
-    border: 1px darkgrey;
+    border: 1px dotted crimson;
     width: 100%;
-    background-color: darkgrey;
-    border-radius: 10px;    
+    background: rgb(185, 29, 1);
+    border-radius: 10px ;
+}
+
+
+
+.imagen{
+    border: 1px solid white ;
+    display:inline;
+}
+
+#footer_blog{
+    border: 2px solid white;
 }
