@@ -38,8 +38,6 @@ table{
     border-radius: 10px ;
 }
 
-
-
 .imagen{
     border: 1px solid white ;
     display:inline;
@@ -47,4 +45,29 @@ table{
 
 #footer_blog{
     border: 2px solid white;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: auto
+    gap 3rem; 
+}
+section>header{
+    grid-column: span 12;
+    font-size: 25px;
+}
+
+main{
+    grid-column: span 8;
+}
+
+aside{
+    grid-column: span 4;
+    background-color: rgb(187, 173, 173);
+    border: 2px solid black;
+}
+
+#footer_blog{
+    border: 2px solid white;
+    grid-column: span 12;
 }
