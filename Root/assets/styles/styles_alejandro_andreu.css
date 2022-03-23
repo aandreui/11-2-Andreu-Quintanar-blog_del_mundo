@@ -28,7 +28,8 @@ nav>ul>li{
     list-style: none;
 }
 
-nav>ul>li>a{
+nav>ul>li>a{ 
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -68,4 +69,36 @@ aside{
 #footer_blog{
     border: 2px solid white;
     grid-column: span 12;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+nav>ul{
+    display: flex;
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+nav>ul>li>a:hover{ 
+    color: greenyellow;
+    text-decoration: underline;
+}
+article>header>hgroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+article>header>hgroup>h2>img{
+    
+    margin-right:1rem;
+}
+article>header>hgroup>h2>{
+    display: flex;
+    align-items: center;
 }
