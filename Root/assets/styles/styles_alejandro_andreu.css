@@ -1,104 +1,118 @@
-body{
+body {
     background-color: rgba(68, 86, 88, 0.76);
-    
+
 }
 
-h1{
+h1 {
     color: white;
     text-align: center;
 }
 
-h2{
+h2 {
     color: white;
     text-align: center;
 }
 
-footer{
+footer {
     color: white;
 }
 
-article{
+article {
     background-color: rgb(112, 100, 100);
     padding-left: 1.5rem;
-    padding-right: 1.5rem; 
-    border-bottom: 1px solid;  color:#FFFFFF ; 
+    padding-right: 1.5rem;
+    border-bottom: 1px solid;
+    color: #FFFFFF;
 }
-nav>ul>li{
+
+nav>ul>li {
     color: rgb(0, 0, 0);
     list-style: none;
 }
 
-nav>ul>li>a{ 
+nav>ul>li>a {
     color: #FFFFFF;
     text-decoration: none;
 }
 
-table{
+table {
     border: 2px solid rgb(0, 0, 0);
     width: 100%;
     background: rgb(87, 82, 81);
-    border-radius: 10px ;
+    border-radius: 10px;
 }
 
-.imagen{
-    border: 1px solid white ;
-    display:inline;
+.imagen {
+    border: 1px solid white;
+    display: inline;
 }
 
-section{
+section {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-auto-rows: auto
-    gap 3rem; 
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: auto gap 3rem;
 }
-section>header{
+
+section>header {
     grid-column: span 12;
     font-size: 25px;
 }
 
-main{
+main {
     grid-column: span 8;
 }
 
-aside{
+aside {
     grid-column: span 4;
     background-color: rgb(187, 173, 173);
     border: 2px solid black;
 }
 
-#footer_blog{
+#footer_blog {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     border: 2px solid white;
     grid-column: span 12;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-direction: row;
 }
-nav>ul{
+
+nav>ul {
     display: flex;
     font-size: 1.3rem;
     color: #FFFFFF;
     align-items: center;
     justify-content: space-around;
-    
+
 
 }
-nav>ul>li>a:hover{ 
+
+nav>ul>li>a:hover {
     color: greenyellow;
     text-decoration: underline;
 }
-article>header>hgroup{
+
+article>header>hgroup {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
-article>header>hgroup>h2>img{
-    
-    margin-right:1rem;
+
+article>header>hgroup>h2>img {
+
+    margin-right: 1rem;
 }
-article>header>hgroup>h2>{
+
+article>header>hgroup>h2> {
     display: flex;
     align-items: center;
+}
+
+h4 {
+    text-align: right;
 }
