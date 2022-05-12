@@ -1,73 +1,186 @@
-body{
-    background-color: rgb(17, 16, 16);
-    
+body {
+    background-color: rgba(68, 86, 88, 0.76);
+    margin: 0;
+
 }
 
-h1{
+h1 {
     color: white;
     text-align: center;
 }
 
-h2{
+h2 {
     color: white;
     text-align: center;
 }
-footer{
+
+footer {
     color: white;
 }
 
-article{
+article {
     background-color: rgb(112, 100, 100);
     padding-left: 1.5rem;
-    padding-right: 1.5rem; 
-    border-bottom: 1px solid;  color:#FFFFFF ; 
+    padding-right: 1.5rem;
+    border-bottom: 1px solid;
+    color: #FFFFFF;
 }
-nav>ul>li{
-    color: rgb(170, 23, 23);
+
+
+
+nav>ul>li {
+    color: rgb(0, 0, 0);
     list-style: none;
 }
 
-nav>ul>li>a{
+nav>ul>li>a {
+    color: #FFFFFF;
     text-decoration: none;
 }
 
-table{
-    border: 1px dotted crimson;
+table {
+    border: 2px solid rgb(0, 0, 0);
     width: 100%;
-    background: rgb(185, 29, 1);
-    border-radius: 10px ;
+    background: rgb(87, 82, 81);
+    border-radius: 10px;
 }
 
-.imagen{
-    border: 1px solid white ;
-    display:inline;
+.imagen {
+    border: 1px solid white;
+    display: inline;
 }
 
-#footer_blog{
-    border: 2px solid white;
-}
-section{
+section {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-auto-rows: auto
-    gap 3rem; 
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: auto gap 3rem;
 }
-section>header{
+
+section>header {
     grid-column: span 12;
     font-size: 25px;
 }
 
-main{
-    grid-column: span 8;
+main {
+    grid-column: span 12;
 }
 
-aside{
-    grid-column: span 4;
+@media(min-width: 1024.1px) {
+    main {
+        grid-column: span 8;
+    }
+}
+
+
+aside {
+    grid-column: span 12;
     background-color: rgb(187, 173, 173);
     border: 2px solid black;
+
 }
 
-#footer_blog{
+@media(min-width: 1100px) {
+    aside {
+        grid-column: span 4;
+        background-color: rgb(187, 173, 173);
+        border: 2px solid black;
+
+    }
+
+}
+
+#footer_blog {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     border: 2px solid white;
     grid-column: span 12;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+table {
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+
+}
+
+@media(min-width: 1100px) {
+    nav>ul {
+        display: flex;
+        font-size: 1.3rem;
+        color: #FFFFFF;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+nav>ul>li>a:hover {
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+article>header>hgroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+article>header>hgroup>h2>img {
+
+    margin-right: 1rem;
+}
+
+article>header>hgroup>h2> {
+    display: flex;
+    align-items: center;
+}
+
+h4 {
+    text-align: right;
+}
+
+aside>h2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+aside>div:nth-child(even) {
+    color: #FFFFFF;
+    background-color: rgb(44, 43, 43);
+}
+
+aside>div>span {
+    display: flex;
+}
+
+aside div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.6rem;
+    border-bottom: 1px dashed #fff;
+}
+
+/* si la pantalla mide mínimo 1024.1 px y máximo 1324.1 entonces... */
+@media (min-width: 1024.1px) and (max-width: 1324.1px) {
+    aside div {
+        /* despliega los elementos de microblogging uno encima del otr */
+        flex-direction: column;
+    }
 }
